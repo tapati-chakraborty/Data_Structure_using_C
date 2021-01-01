@@ -77,3 +77,14 @@ int main()
 
 	return 0;
 }
+
+
+/*############################################
+
+Output:
+
+Stack has been created successfully using array......
+The stack is empty....
+The stack is not full....
+
+############################################*/
