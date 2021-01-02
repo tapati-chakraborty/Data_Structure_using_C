@@ -100,3 +100,21 @@ int main()
 
 	return 0;
 }
+
+/*##############################################################
+
+Output:
+
+Stack has been created successfully using array......
+Before pushing(return 1 if full and 0 if not full),Full: 0
+Before pushing(return 1 if empty and 0 if not empty),Empty: 1
+enter the total number of element you want to push to stack: 4
+Pushing 0th element is....Enter the element which you want to push to the stack: 1
+Pushing 1th element is....Enter the element which you want to push to the stack: 2
+Pushing 2th element is....Enter the element which you want to push to the stack: 3
+Pushing 3th element is....Enter the element which you want to push to the stack: 4
+After pushing(return 1 if full and 0 if not full),Full: 0
+After pushing(return 1 if empty and 0 if not empty),Empty: 0
+4 poped from the stack
+
+###############################################################*/
