@@ -70,10 +70,8 @@ int pop(struct Node **top)
 	}
 	else
 	{
-		struct Node *n = *top;
+		int x = (*top)->data;
 		*top = (*top)->next;
-		int x = n->data;
-		free(n);
 
 		return x;
 	}
@@ -87,6 +85,9 @@ int main()
 
 	top = push(top, 8);
 	top = push(top, 7);
+	top = push(top, 6);
+	top = push(top, 45);
+	top = push(top, 67);
 	printf("After pushing the stack-------- \n");
 	linkedlistTraversal(top);
 
