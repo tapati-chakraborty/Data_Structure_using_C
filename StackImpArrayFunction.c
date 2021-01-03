@@ -98,6 +98,8 @@ int main()
 
 	pop(s);	//------>Last In First Out
 
+	free(s);
+	
 	return 0;
 }
 
