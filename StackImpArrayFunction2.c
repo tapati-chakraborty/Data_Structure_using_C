@@ -113,6 +113,8 @@ int main()
 		printf("The value at position %d is %d\n", j, peek(s, j));
 	}
 
+	free(s);
+	
 	return 0;
 }
 
