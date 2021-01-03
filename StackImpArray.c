@@ -75,6 +75,8 @@ int main()
 		printf("The stack is not full....\n");
 	}
 
+	free(s);
+
 	return 0;
 }
 
