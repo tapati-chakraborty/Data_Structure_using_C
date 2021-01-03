@@ -39,6 +39,7 @@ int isFull(struct Node *top)
 	else{
 		return 0;
 	}
+	free(p);
 }
 
 int main()
@@ -69,6 +70,8 @@ int main()
 	{
 		printf("The stack is not full..\n");
 	}
+
+	free(top);
 
 	return 0;
 }
