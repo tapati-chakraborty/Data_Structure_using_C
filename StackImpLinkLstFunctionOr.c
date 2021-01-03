@@ -39,6 +39,7 @@ int isFull(struct Node *top)
 	else{
 		return 0;
 	}
+	free(p);
 }
 
 //Push an element to the stack.....
@@ -57,6 +58,7 @@ struct Node * push(struct Node *top, int x)
 		top = n;
 
 		return top;
+		free(n);
 	}
 
 }
