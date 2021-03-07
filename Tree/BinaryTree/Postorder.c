@@ -41,11 +41,11 @@ int main()
 	struct node *p4 = createNode(6);
 
 	/*Finally the tree look like this:
-			 2
-			/ \
-		   3   4
-		  / \
-		 11  6
+              2
+            /  \
+           3    4
+          / \
+         11  6
 	*/
 	//Linking root node with left and right node
 	p->left = p1;
