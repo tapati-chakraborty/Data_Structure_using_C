@@ -1,16 +1,16 @@
 /*
 ____________________________________________________________________________
-	👉____Linear search____				|		👉_____Binary search____
-										|
-1.)works on both sorted and unsorted	|1.)works only on sorted array
-	array.								|
-										|
-2.)equality operation					|2.)inequality operation
-										|
-										|
-3.)O(n) worst case complexity.			|3.)O(logn) worst case complexity.
-										|
-										|
+    👉____Linear search____             |       👉_____Binary search____
+                                        |
+1.)works on both sorted and unsorted    |1.)works only on sorted array
+    array.                              |
+                                        |
+2.)equality operation                   |2.)inequality operation
+                                        |
+                                        |
+3.)O(n) worst case complexity.          |3.)O(logn) worst case complexity.
+                                        |
+                                        |
 ____________________________________________________________________________
 */
 
@@ -40,13 +40,13 @@ int binarySearch(int arr[], int size, int element)
 	{
 		mid = (high + low)/2;
 		if(arr[mid] == element) {
-			return mid;		//in best-case the middle element will be the search element
+			return mid;     //in best-case the middle element will be the search element
 		}
 		if(arr[mid] < element) {
-			low = mid + 1;	//if middle element is less than the search element then low range become mid+1
+			low = mid + 1;   //if middle element is less than the search element then low range become mid+1
 		}
 		else {
-			high = mid - 1;	//if middle element is greater than search element then high range become mid-1
+			high = mid - 1;  //if middle element is greater than search element then high range become mid-1
 		}
 	}
 	return -1;
@@ -54,7 +54,7 @@ int binarySearch(int arr[], int size, int element)
 
 int main()
 {
-	//unsorted array for linear search
+    //unsorted array for linear search
 	int arr[] = {3,56,2,89,1,65,8,65,345,98};
 	int element;
 	printf("Enter the element you want to search: ");
@@ -63,14 +63,14 @@ int main()
 	int searchIndex = linearSearch(arr, size, element);
 	printf("The lement %d was found at index %d 😊\n",element, searchIndex);
 
-	//sorted array for binary search
-	// int arr[] = {2,3,4,5,6,7,89,97,102};
-	// int element;
-	// printf("Enter the element you want to search: ");
-	// scanf("%d", &element);
-	// int size = sizeof(arr)/sizeof(int);
-	// int searchIndex = binarySearch(arr, size, element);
-	// printf("The lement %d was found at index %d 😊\n",element, searchIndex);
+    //sorted array for binary search
+    // int arr[] = {2,3,4,5,6,7,89,97,102};
+    // int element;
+    // printf("Enter the element you want to search: ");
+    // scanf("%d", &element);
+    // int size = sizeof(arr)/sizeof(int);
+    // int searchIndex = binarySearch(arr, size, element);
+    // printf("The lement %d was found at index %d 😊\n",element, searchIndex);
 
 	return 0;
 }

@@ -35,7 +35,7 @@ void enqueue(struct circularQueue *q, int val)
 	}
 	else
 	{
-		q->r = q->r+1 % q->size;
+		q->r = q->r + 1 % q->size;
 		q->arr[q->r] = val;
 		printf("Enqueued element: %d\n", val);
 	}
@@ -50,7 +50,7 @@ int dequeue(struct circularQueue *q)
 	}
 	else
 	{
-		q->f = q->f+1 % q->size;
+		q->f = q->f + 1 % q->size;
 		a = q->arr[q->f];
 	}
 	return a;
